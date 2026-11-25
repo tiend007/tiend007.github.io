@@ -1,0 +1,1152 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>国久精产_精密制造工艺与产线实录_国产高端装备供应链</title>
+<meta name="description" content="国久精产聚焦精密制造与高端装备国产化，提供产线实录、工艺拆解、供应商名录、良率数据、设备评测与工程师问答，适合制造业从业者与采购选型参考。">
+<meta name="keywords" content="精密加工工艺,高端装备国产化,数控产线实录,制造良率数据,工业零部件选型">
+<style>
+:root{
+  --ink:#0e1720;
+  --ink-2:#22303c;
+  --ink-3:#4b5c69;
+  --line:#d9e0e6;
+  --line-soft:#eaeff3;
+  --bg:#f4f6f8;
+  --panel:#ffffff;
+  --brand:#0b5d63;
+  --brand-2:#0f7f86;
+  --brand-soft:#e3f2f2;
+  --accent:#c9761b;
+  --accent-soft:#fdf1e2;
+  --ok:#1f7a4d;
+  --radius:10px;
+  --radius-sm:6px;
+  --shadow:0 1px 2px rgba(14,23,32,.06),0 8px 24px rgba(14,23,32,.06);
+  --shadow-sm:0 1px 2px rgba(14,23,32,.07);
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+  --announce-h:38px;
+  --header-h:62px;
+  --offset:calc(var(--announce-h) + var(--header-h) + 12px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--offset)}
+body{
+  margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);
+  font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700;letter-spacing:.01em}
+p{margin:0 0 .85em}
+ul,ol{margin:0 0 .9em;padding-left:1.25em}
+li{margin-bottom:.35em}
+:focus-visible{outline:2px solid var(--brand-2);outline-offset:2px;border-radius:3px}
+
+/* ---------- 吸顶公告条 ---------- */
+.announce{
+  position:sticky;top:0;z-index:60;height:var(--announce-h);
+  background:linear-gradient(90deg,#0b5d63,#0f7f86 55%,#127f6a);
+  color:#eafcfb;display:flex;align-items:center;overflow:hidden;
+  font-size:13px;
+}
+.announce-inner{
+  width:100%;max-width:1400px;margin:0 auto;padding:0 20px;
+  display:flex;align-items:center;gap:12px;white-space:nowrap;
+}
+.announce-tag{
+  background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);
+  padding:1px 8px;border-radius:99px;font-size:11px;letter-spacing:.08em;flex:none;
+}
+.announce-text{overflow:hidden;text-overflow:ellipsis;flex:1;min-width:0}
+.announce-text strong{color:#fff}
+.announce-link{color:#d8fbf6;flex:none;font-size:12px;border-bottom:1px dashed rgba(216,251,246,.5)}
+.announce-link:hover{text-decoration:none;color:#fff}
+
+/* ---------- 页头 ---------- */
+.header{
+  position:sticky;top:var(--announce-h);z-index:55;height:var(--header-h);
+  background:rgba(255,255,255,.96);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  max-width:1400px;margin:0 auto;padding:0 20px;height:100%;
+  display:flex;align-items:center;gap:20px;
+}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand-mark{width:34px;height:34px;flex:none}
+.brand-name{font-size:19px;font-weight:800;letter-spacing:.06em;color:var(--ink)}
+.brand-sub{font-size:10px;letter-spacing:.22em;color:var(--ink-3);display:block;margin-top:-4px}
+.nav{display:flex;align-items:center;gap:2px;flex:1;min-width:0;overflow:hidden}
+.nav a{
+  font-size:14px;color:var(--ink-2);padding:6px 10px;border-radius:var(--radius-sm);
+  white-space:nowrap;
+}
+.nav a:hover{background:var(--brand-soft);color:var(--brand);text-decoration:none}
+.header-tools{display:flex;align-items:center;gap:10px;flex:none}
+.search-box{position:relative;display:flex;align-items:center}
+.search-box input{
+  width:190px;height:34px;padding:0 32px 0 11px;border:1px solid var(--line);
+  border-radius:99px;font-size:13px;font-family:inherit;background:#fbfcfd;color:var(--ink);
+}
+.search-box input:focus{outline:none;border-color:var(--brand-2);background:#fff;box-shadow:0 0 0 3px rgba(15,127,134,.12)}
+.search-box svg{position:absolute;right:11px;width:15px;height:15px;color:var(--ink-3);pointer-events:none}
+.btn-ghost{
+  height:34px;padding:0 14px;border-radius:99px;border:1px solid var(--brand);
+  color:var(--brand);background:#fff;font-size:13px;font-family:inherit;cursor:pointer;
+  display:inline-flex;align-items:center;gap:6px;
+}
+.btn-ghost:hover{background:var(--brand-soft);text-decoration:none}
+.menu-btn{display:none}
+
+/* ---------- 布局 ---------- */
+.wrap{max-width:1400px;margin:0 auto;padding:0 20px}
+.layout{display:grid;grid-template-columns:180px minmax(0,1fr) 260px;gap:26px;padding:26px 0 10px}
+.col-left{position:relative}
+.col-right{position:relative}
+.sticky-col{position:sticky;top:var(--offset);display:flex;flex-direction:column;gap:16px}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  background:
+    radial-gradient(1100px 320px at 12% -20%,#d7ecec 0%,transparent 62%),
+    radial-gradient(900px 300px at 92% 0%,#f6e6d2 0%,transparent 58%),
+    linear-gradient(180deg,#ffffff,#f7fafb);
+  border-bottom:1px solid var(--line);
+}
+.hero-grid{
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+  gap:34px;align-items:center;padding:38px 0 40px;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.16em;
+  color:var(--brand);background:var(--brand-soft);border:1px solid #c8e6e6;
+  padding:3px 11px;border-radius:99px;margin-bottom:14px;
+}
+.hero h1{font-size:42px;letter-spacing:.04em;margin-bottom:14px}
+.hero h1 span{color:var(--brand)}
+.hero-desc{font-size:15.5px;color:var(--ink-3);max-width:36em;margin-bottom:20px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.btn-primary{
+  height:42px;padding:0 22px;border-radius:99px;background:var(--brand);color:#fff;
+  font-size:14.5px;font-weight:600;display:inline-flex;align-items:center;gap:8px;
+  border:1px solid var(--brand);
+}
+.btn-primary:hover{background:#0a4e53;text-decoration:none}
+.btn-line{
+  height:42px;padding:0 20px;border-radius:99px;border:1px solid var(--line);
+  background:#fff;color:var(--ink-2);font-size:14.5px;display:inline-flex;align-items:center;gap:8px;
+}
+.btn-line:hover{border-color:var(--brand);color:var(--brand);text-decoration:none}
+.hero-stats{display:flex;flex-wrap:wrap;gap:26px;border-top:1px dashed var(--line);padding-top:16px}
+.hero-stat b{display:block;font-size:22px;color:var(--ink);font-family:var(--mono);letter-spacing:-.02em}
+.hero-stat span{font-size:12px;color:var(--ink-3);letter-spacing:.04em}
+.hero-visual{position:relative}
+.hero-visual svg{width:100%;height:auto;display:block}
+
+/* ---------- 侧栏组件 ---------- */
+.side-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden}
+.side-head{
+  padding:10px 14px;font-size:12.5px;font-weight:700;letter-spacing:.1em;color:var(--ink-2);
+  border-bottom:1px solid var(--line-soft);background:#fafcfc;
+  display:flex;justify-content:space-between;align-items:center;
+}
+.side-body{padding:12px 14px}
+.chan-list{list-style:none;margin:0;padding:0}
+.chan-list li{margin:0}
+.chan-list a{
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  padding:7px 8px;border-radius:var(--radius-sm);font-size:13.5px;color:var(--ink-2);
+}
+.chan-list a:hover{background:var(--brand-soft);color:var(--brand);text-decoration:none}
+.chan-list .cnt{font-family:var(--mono);font-size:11.5px;color:var(--ink-3)}
+.rank-list{list-style:none;margin:0;padding:0;counter-reset:r}
+.rank-list li{
+  counter-increment:r;display:flex;gap:9px;padding:8px 0;border-bottom:1px dashed var(--line-soft);
+  font-size:13.5px;align-items:flex-start;
+}
+.rank-list li:last-child{border-bottom:0;padding-bottom:0}
+.rank-list li::before{
+  content:counter(r);flex:none;width:18px;height:18px;border-radius:4px;background:#eef3f5;
+  color:var(--ink-3);font-family:var(--mono);font-size:11px;display:grid;place-items:center;margin-top:3px;
+}
+.rank-list li:nth-child(1)::before{background:var(--brand);color:#fff}
+.rank-list li:nth-child(2)::before{background:var(--brand-2);color:#fff}
+.rank-list li:nth-child(3)::before{background:#8fc4c4;color:#08383b}
+.rank-list a{color:var(--ink-2)}
+.rank-list a:hover{color:var(--brand)}
+.rank-list .meta{display:block;font-size:11.5px;color:var(--ink-3);margin-top:1px}
+
+/* ---------- 通用板块 ---------- */
+.section{margin-bottom:30px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.section-pad{padding:20px 22px}
+.section-head{
+  display:flex;align-items:flex-end;justify-content:space-between;gap:14px;
+  padding:16px 22px 12px;border-bottom:1px solid var(--line-soft);background:linear-gradient(180deg,#fbfdfd,#fff);
+}
+.section-head h2{font-size:19px;letter-spacing:.02em}
+.section-head h2 em{font-style:normal;color:var(--brand)}
+.section-head .lead{font-size:12.5px;color:var(--ink-3);margin:2px 0 0}
+.section-head .more{font-size:12.5px;color:var(--brand);white-space:nowrap}
+.kicker{font-size:11px;letter-spacing:.18em;color:var(--brand-2);text-transform:uppercase;display:block;margin-bottom:2px}
+
+/* 概览 */
+.overview p{font-size:14.8px;color:var(--ink-2);line-height:1.85}
+.overview .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:14px}
+.overview .kv div{background:#f7fafb;border:1px solid var(--line-soft);border-radius:var(--radius-sm);padding:9px 12px}
+.overview .kv b{display:block;font-size:13px;color:var(--brand)}
+.overview .kv span{font-size:12px;color:var(--ink-3)}
+
+/* 卡片网格 */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:14px;padding:16px 22px 20px}
+.card{
+  border:1px solid var(--line);border-radius:var(--radius-sm);background:#fff;overflow:hidden;
+  display:flex;flex-direction:column;transition:box-shadow .16s ease,transform .16s ease;
+}
+.card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+.card-cover{position:relative;aspect-ratio:4/3;background:#eef2f4;overflow:hidden}
+.card-cover img{width:100%;height:100%;object-fit:cover}
+.card-badge{
+  position:absolute;left:8px;top:8px;background:rgba(11,93,99,.92);color:#fff;
+  font-size:11px;padding:2px 8px;border-radius:99px;letter-spacing:.04em;
+}
+.card-body{padding:11px 12px 13px;display:flex;flex-direction:column;flex:1}
+.card-body h3{font-size:14.5px;margin-bottom:6px}
+.card-body h3 a{color:var(--ink)}
+.card-body h3 a:hover{color:var(--brand);text-decoration:none}
+.card-body p{font-size:12.8px;color:var(--ink-3);line-height:1.65;margin:0 0 10px;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:9px}
+.tag{font-size:11px;color:var(--brand);background:var(--brand-soft);border:1px solid #d3eaea;padding:1px 7px;border-radius:99px;white-space:nowrap}
+.tag.warm{color:var(--accent);background:var(--accent-soft);border-color:#f0dcc0}
+.card-foot{display:flex;justify-content:space-between;align-items:center;font-size:11.5px;color:var(--ink-3);border-top:1px dashed var(--line-soft);padding-top:8px}
+.card-foot .score{font-family:var(--mono);color:var(--accent);font-weight:700}
+
+/* 动态列表 */
+.feed{list-style:none;margin:0;padding:6px 22px 16px}
+.feed li{display:grid;grid-template-columns:78px minmax(0,1fr);gap:14px;padding:11px 0;border-bottom:1px dashed var(--line-soft)}
+.feed li:last-child{border-bottom:0}
+.feed time{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);padding-top:2px}
+.feed b{font-size:14px;color:var(--ink)}
+.feed b a{color:inherit}
+.feed b a:hover{color:var(--brand);text-decoration:none}
+.feed p{font-size:12.8px;color:var(--ink-3);margin:2px 0 0;line-height:1.6}
+.pill{font-size:10.5px;padding:0 6px;border-radius:3px;margin-left:6px;vertical-align:1px}
+.pill.new{background:#e6f5ec;color:var(--ok)}
+.pill.live{background:#fde9e6;color:#b23a2c}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;padding:16px 22px 20px}
+.cat{
+  border:1px solid var(--line);border-radius:var(--radius-sm);padding:11px 12px;background:#fbfcfd;
+  display:block;transition:.15s ease;
+}
+.cat:hover{border-color:var(--brand-2);background:var(--brand-soft);text-decoration:none}
+.cat b{display:block;font-size:14px;color:var(--ink);margin-bottom:2px}
+.cat span{font-size:11.8px;color:var(--ink-3);line-height:1.5;display:block}
+
+/* 深度解析 */
+.article{padding:20px 24px 24px;max-width:52em}
+.article h3{font-size:16.5px;margin:22px 0 8px;padding-left:10px;border-left:3px solid var(--brand-2)}
+.article h3:first-child{margin-top:0}
+.article p{font-size:14.6px;color:var(--ink-2);line-height:1.9}
+.article ul,.article ol{font-size:14.4px;color:var(--ink-2);line-height:1.85}
+.article li b{color:var(--ink)}
+.callout{
+  background:#f6faf9;border:1px solid #d8eaea;border-left:3px solid var(--brand-2);
+  border-radius:var(--radius-sm);padding:11px 14px;font-size:14px;color:var(--ink-2);margin:14px 0;
+}
+.callout b{color:var(--brand)}
+
+/* 对照表 */
+.compare{width:100%;border-collapse:collapse;font-size:13.4px;margin:6px 0 4px}
+.compare th,.compare td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.compare th{background:#f4f8f8;font-size:12.5px;color:var(--ink-2);letter-spacing:.02em}
+.compare td b{color:var(--brand)}
+.table-scroll{overflow-x:auto}
+
+/* 步骤 */
+.steps{list-style:none;padding:0;margin:0;counter-reset:s}
+.steps li{
+  counter-increment:s;position:relative;padding:0 0 0 40px;margin-bottom:14px;
+}
+.steps li::before{
+  content:counter(s);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;
+  background:var(--brand);color:#fff;display:grid;place-items:center;font-family:var(--mono);font-size:13px;
+}
+.steps b{display:block;font-size:14.4px;margin-bottom:2px}
+.steps span{font-size:13.4px;color:var(--ink-3);line-height:1.7;display:block}
+
+/* FAQ */
+.faq{padding:8px 22px 18px}
+.faq details{border-bottom:1px solid var(--line-soft);padding:9px 0}
+.faq details:last-child{border-bottom:0}
+.faq summary{
+  cursor:pointer;font-size:14.4px;font-weight:600;color:var(--ink);list-style:none;
+  display:flex;gap:8px;align-items:flex-start;padding:2px 0;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{
+  content:"Q";flex:none;font-family:var(--mono);font-size:11px;color:var(--brand);
+  background:var(--brand-soft);border-radius:3px;width:18px;height:18px;display:grid;place-items:center;margin-top:3px;
+}
+.faq details[open] summary{color:var(--brand)}
+.faq .ans{font-size:13.6px;color:var(--ink-3);line-height:1.8;padding:7px 0 3px 26px}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:12px;padding:16px 22px 20px}
+.cmt{border:1px solid var(--line-soft);border-radius:var(--radius-sm);padding:11px 13px;background:#fcfdfd}
+.cmt-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.avatar{
+  width:26px;height:26px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-size:11.5px;font-weight:700;color:#fff;background:var(--brand-2);
+}
+.avatar.a2{background:#b4622b}.avatar.a3{background:#3c6e9e}.avatar.a4{background:#6a5aa0}
+.avatar.a5{background:#1f7a4d}.avatar.a6{background:#9c3c58}
+.cmt-name{font-size:12.8px;font-weight:600;color:var(--ink-2)}
+.cmt-time{font-size:11px;color:var(--ink-3);margin-left:auto;font-family:var(--mono)}
+.cmt p{font-size:13.2px;color:var(--ink-2);margin:0;line-height:1.72}
+.cmt .on{color:var(--brand);font-weight:600}
+
+/* 资讯 */
+.news{list-style:none;margin:0;padding:8px 22px 18px}
+.news li{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;padding:12px 0;border-bottom:1px dashed var(--line-soft)}
+.news li:last-child{border-bottom:0}
+.news img{width:96px;height:66px;object-fit:cover;border-radius:var(--radius-sm);background:#eef2f4}
+.news h3{font-size:14.2px;margin-bottom:3px}
+.news h3 a{color:var(--ink)}
+.news h3 a:hover{color:var(--brand);text-decoration:none}
+.news p{font-size:12.7px;color:var(--ink-3);margin:0;line-height:1.62}
+.news time{font-family:var(--mono);font-size:11px;color:var(--ink-3);display:block;margin-top:3px}
+
+/* 相关推荐 标签索引 */
+.index-tags{display:flex;flex-wrap:wrap;gap:8px;padding:16px 22px 20px}
+.index-tags a{
+  font-size:13px;border:1px solid var(--line);border-radius:99px;padding:5px 13px;color:var(--ink-2);
+  background:#fbfcfd;
+}
+.index-tags a:hover{border-color:var(--brand);color:var(--brand);background:var(--brand-soft);text-decoration:none}
+.index-tags a i{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--ink-3);margin-left:6px}
+
+/* 时间线 */
+.timeline{list-style:none;margin:0;padding:14px 22px 20px;position:relative}
+.timeline::before{content:"";position:absolute;left:30px;top:22px;bottom:26px;width:2px;background:var(--line)}
+.timeline li{position:relative;padding:0 0 16px 30px;margin:0}
+.timeline li::before{
+  content:"";position:absolute;left:-3px;top:6px;width:10px;height:10px;border-radius:50%;
+  background:#fff;border:2px solid var(--brand-2);
+}
+.timeline li:last-child{padding-bottom:0}
+.timeline b{font-size:14px;display:block}
+.timeline .t-date{font-family:var(--mono);font-size:11.5px;color:var(--brand);letter-spacing:.02em}
+.timeline span.desc{font-size:13px;color:var(--ink-3);display:block;margin-top:2px;line-height:1.65}
+
+/* 搜索无结果 */
+.no-result{display:none;padding:14px 22px 22px;font-size:14px;color:var(--ink-3)}
+.no-result b{color:var(--accent)}
+.card.hide,.cat.hide{display:none}
+
+/* 页尾 */
+.footer{background:#0d1a20;color:#b9c8cf;margin-top:34px;padding:34px 0 0;font-size:13.4px}
+.footer a{color:#cfdde3}
+.footer a:hover{color:#fff}
+.footer-top{display:grid;grid-template-columns:1.5fr repeat(4,1fr);gap:26px;padding-bottom:26px}
+.footer-brand .brand-name{color:#fff}
+.footer-brand .brand-sub{color:#7d949e}
+.footer-brand p{margin-top:12px;font-size:12.8px;color:#8ba2ac;line-height:1.8;max-width:30em}
+.footer h4{font-size:12.5px;color:#fff;letter-spacing:.1em;margin-bottom:10px;font-weight:700}
+.footer ul{list-style:none;padding:0;margin:0}
+.footer li{margin-bottom:6px}
+.footer li a{font-size:12.8px;color:#9fb5be}
+.footer-bottom{
+  border-top:1px solid #1e2f37;padding:14px 0 20px;display:flex;flex-wrap:wrap;gap:10px 22px;
+  justify-content:space-between;font-size:12px;color:#7d949e;
+}
+.footer-bottom .note{max-width:60em;line-height:1.7}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1180px){
+  .layout{grid-template-columns:170px minmax(0,1fr) 240px;gap:20px}
+  .hero h1{font-size:36px}
+}
+@media (max-width:1024px){
+  .layout{grid-template-columns:minmax(0,1fr) 260px}
+  .col-left{grid-column:1/-1;order:-1}
+  .col-left .sticky-col{position:static;flex-direction:row;flex-wrap:wrap}
+  .col-left .side-card{flex:1 1 300px}
+  .chan-list{display:flex;flex-wrap:wrap;gap:4px}
+  .chan-list li{flex:1 1 130px}
+  .hero-grid{grid-template-columns:1fr;gap:24px}
+  .hero h1{font-size:34px}
+  .nav{display:none}
+  .menu-btn{display:inline-flex}
+  .footer-top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:740px){
+  :root{--header-h:56px}
+  .wrap{padding:0 14px}
+  .layout{grid-template-columns:1fr;gap:18px;padding-top:18px}
+  .col-right{order:2}
+  .col-left{order:3}
+  .sticky-col{position:static}
+  .hero-grid{padding:26px 0 28px}
+  .hero h1{font-size:29px}
+  .hero-desc{font-size:14.4px}
+  .hero-stats{gap:18px}
+  .hero-stat b{font-size:19px}
+  .search-box input{width:100%;min-width:0}
+  .header-inner{gap:10px}
+  .header-tools .btn-ghost span{display:none}
+  .section-head{flex-direction:column;align-items:flex-start;gap:2px;padding:14px 16px 10px}
+  .section-pad,.article,.faq,.index-tags{padding-left:16px;padding-right:16px}
+  .card-grid,.cat-grid,.comments,.feed,.news,.timeline{padding-left:16px;padding-right:16px}
+  .article{max-width:none}
+  .feed li{grid-template-columns:1fr;gap:2px}
+  .news li{grid-template-columns:80px minmax(0,1fr);gap:10px}
+  .news img{width:80px;height:58px}
+  .footer-top{grid-template-columns:1fr;gap:18px}
+  .announce-link{display:none}
+  .announce-text{font-size:12px}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="announce" id="announce">
+  <div class="announce-inner">
+    <span class="announce-tag">产线更新</span>
+    <span class="announce-text">本周新增 <strong>12 条</strong> 精密产线实录：苏州工业园五轴联动线、宁波轴承磨削线、合肥真空镀膜线均已上线，附节拍与良率原始数据。</span>
+    <a class="announce-link" href="#feed">查看更新明细 →</a>
+  </div>
+</div>
+
+<!-- 页头 -->
+<header class="header">
+  <div class="header-inner">
+    <a class="brand" href="/#top" aria-label="国久精产 首页">
+      <svg class="brand-mark" viewBox="0 0 40 40" role="img" aria-label="国久精产图形标志">
+        <rect x="1.5" y="1.5" width="37" height="37" rx="9" fill="#0b5d63"/>
+        <path d="M11 27.5V14.2l9 7.2 9-7.2v13.3" fill="none" stroke="#8ee0d8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+        <circle cx="20" cy="24.6" r="2.6" fill="#f0b473"/>
+        <path d="M9 31.5h22" stroke="#2f8b8f" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <span>
+        <span class="brand-name">国久精产</span>
+        <span class="brand-sub">JINGCHAN INDUSTRY</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="主导航">
+      <a href="#overview">领域概览</a>
+      <a href="#picks">精选产线</a>
+      <a href="#feed">更新动态</a>
+      <a href="#cats">工艺分类</a>
+      <a href="#deep">工艺解析</a>
+      <a href="#guide">选型路径</a>
+      <a href="#faq">工程师问答</a>
+      <a href="#rank">榜单</a>
+    </nav>
+
+    <div class="header-tools">
+      <div class="search-box">
+        <input id="q" type="search" placeholder="搜产线 / 工艺 / 供应商" aria-label="在本页内容中搜索产线、工艺或供应商">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+      </div>
+      <button class="menu-btn btn-ghost" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileNav">频道</button>
+      <a class="btn-ghost" href="#picks">产线名录</a>
+    </div>
+  </div>
+  <nav id="mobileNav" class="nav" aria-label="移动频道导航" style="display:none;padding:8px 20px;border-top:1px solid var(--line);flex-wrap:wrap;background:#fff">
+    <a href="#overview">领域概览</a>
+    <a href="#picks">精选产线</a>
+    <a href="#feed">更新动态</a>
+    <a href="#cats">工艺分类</a>
+    <a href="#deep">工艺解析</a>
+    <a href="#guide">选型路径</a>
+    <a href="#faq">工程师问答</a>
+    <a href="#rank">榜单</a>
+  </nav>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="hero-eyebrow">精密制造 · 产线实录 · 供应链数据</span>
+      <h1>国久精产</h1>
+      <p class="hero-desc">把国内高端装备与精密加工的真实产线搬到台面上：五轴联动、超精磨削、真空镀膜、精密冲压与检测计量，每条记录都带节拍、良率与在用设备的可核对信息，供工程师选型、采购比价与工艺改进参考。</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#picks">进入产线名录
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn-line" href="#deep">读工艺解析</a>
+        <a class="btn-line" href="#guide">看选型路径</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><b>386</b><span>已收录产线实录</span></div>
+        <div class="hero-stat"><b>1,240</b><span>工艺参数条目</span></div>
+        <div class="hero-stat"><b>92.4%</b><span>平均良率区间中位</span></div>
+        <div class="hero-stat"><b>11-25</b><span>最近一次数据更新</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 460 340" role="img">
+        <defs>
+          <linearGradient id="hg1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#0b5d63"/><stop offset="1" stop-color="#127f6a"/>
+          </linearGradient>
+          <linearGradient id="hg2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e8f1f2"/>
+          </linearGradient>
+        </defs>
+        <rect x="14" y="18" width="432" height="304" rx="16" fill="url(#hg2)" stroke="#d3e4e5"/>
+        <!-- 主轴与刀塔 -->
+        <rect x="44" y="62" width="150" height="18" rx="9" fill="#c9dadd"/>
+        <rect x="44" y="86" width="96" height="12" rx="6" fill="#dfe9ea"/>
+        <circle cx="196" cy="120" r="42" fill="url(#hg1)"/>
+        <circle cx="196" cy="120" r="26" fill="#0a4a4f"/>
+        <circle cx="196" cy="120" r="9" fill="#f0b473"/>
+        <path d="M196 120 L282 74" stroke="#8fb9bb" stroke-width="7" stroke-linecap="round"/>
+        <rect x="278" y="58" width="26" height="30" rx="5" fill="#0f7f86"/>
+        <!-- 工件与底座 -->
+        <rect x="70" y="196" width="320" height="16" rx="8" fill="#dbe6e8"/>
+        <rect x="96" y="164" width="124" height="32" rx="6" fill="#eef4f5" stroke="#c9dadd"/>
+        <rect x="110" y="172" width="96" height="5" rx="2.5" fill="#9dc2c4"/>
+        <rect x="110" y="182" width="62" height="5" rx="2.5" fill="#c6dcdd"/>
+        <rect x="250" y="150" width="86" height="46" rx="6" fill="#ffffff" stroke="#c9dadd"/>
+        <rect x="260" y="160" width="66" height="7" rx="3.5" fill="#0f7f86"/>
+        <rect x="260" y="174" width="46" height="6" rx="3" fill="#b9d2d3"/>
+        <!-- 数据条 -->
+        <g font-family="monospace" font-size="10" fill="#4b5c69">
+          <rect x="70" y="234" width="320" height="66" rx="8" fill="#f7fbfb" stroke="#d9e6e7"/>
+          <text x="82" y="252">CYCLE 42.6s  ·  YIELD 96.2%  ·  Cpk 1.42</text>
+          <rect x="82" y="262" width="180" height="8" rx="4" fill="#d7e8e9"/>
+          <rect x="82" y="262" width="152" height="8" rx="4" fill="#0f7f86"/>
+          <text x="82" y="290">SPINDLE 12000rpm  ·  RA 0.12μm</text>
+          <rect x="262" y="262" width="116" height="8" rx="4" fill="#f0dcc0"/>
+          <rect x="262" y="262" width="86" height="8" rx="4" fill="#c9761b"/>
+        </g>
+        <circle cx="392" cy="66" r="26" fill="#fdf1e2" stroke="#efd9ba"/>
+        <text x="392" y="71" font-family="monospace" font-size="12" fill="#c9761b" text-anchor="middle">OK</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 主布局 -->
+<div class="wrap">
+  <div class="layout">
+
+    <!-- 左频道索引 -->
+    <aside class="col-left" aria-label="频道索引">
+      <div class="sticky-col">
+        <div class="side-card">
+          <div class="side-head"><span>频道索引</span><span class="cnt" style="font-size:11px;color:#4b5c69">12</span></div>
+          <div class="side-body" style="padding:8px">
+            <ul class="chan-list">
+              <li><a href="#cats">五轴联动加工 <span class="cnt">64</span></a></li>
+              <li><a href="#cats">超精磨削 <span class="cnt">48</span></a></li>
+              <li><a href="#cats">真空镀膜 <span class="cnt">37</span></a></li>
+              <li><a href="#cats">精密冲压 <span class="cnt">42</span></a></li>
+              <li><a href="#cats">增材制造 <span class="cnt">29</span></a></li>
+              <li><a href="#cats">检测计量 <span class="cnt">55</span></a></li>
+              <li><a href="#cats">热处理 <span class="cnt">33</span></a></li>
+              <li><a href="#cats">洁净装配 <span class="cnt">26</span></a></li>
+              <li><a href="#rank">良率榜单 <span class="cnt">周更</span></a></li>
+              <li><a href="#news">供应链资讯 <span class="cnt">6</span></a></li>
+              <li><a href="#faq">工程师问答 <span class="cnt">6</span></a></li>
+              <li><a href="#comments">同行讨论 <span class="cnt">16</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="side-card">
+          <div class="side-head"><span>本周更新</span></div>
+          <div class="side-body" style="font-size:12.8px;color:#4b5c69;line-height:1.7">
+            <p style="margin:0 0 8px"><a href="#feed">苏州工业园五轴联动线</a><br><span style="font-size:11.5px;color:#8b9aa3">11-25 · 节拍 42.6s</span></p>
+            <p style="margin:0 0 8px"><a href="#feed">宁波轴承磨削线</a><br><span style="font-size:11.5px;color:#8b9aa3">11-24 · Ra 0.08μm</span></p>
+            <p style="margin:0"><a href="#feed">合肥真空镀膜线</a><br><span style="font-size:11.5px;color:#8b9aa3">11-23 · 膜厚 ±2.1%</span></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- 主内容 -->
+    <main class="col-main" id="main">
+
+      <!-- 1 领域概览 -->
+      <section class="section" id="overview">
+        <div class="section-head">
+          <div>
+            <span class="kicker">Domain Overview</span>
+            <h2>精密制造领域的现状与看点</h2>
+            <p class="lead">从加工方式、设备构成到良率控制，先把这张地图铺开</p>
+          </div>
+        </div>
+        <div class="section-pad overview">
+          <p>精密制造不是一个单一工序，而是一条由材料、成形、去除、改性、检测串起来的链条。国久精产关注的是这条链条上「能落到具体参数」的部分：一台五轴加工中心在实际工况下的定位精度与热漂移，一条超精磨削线的砂轮修整周期与表面粗糙度曲线，一套真空镀膜设备的膜厚均匀性与靶材寿命。这些数字决定了一件零件能否进入汽车电驱、半导体设备、医疗植入体或航空液压件的一级供应链。</p>
+          <p>当前值得关注的方向大致分四类。第一类是<strong>难加工材料</strong>的去除工艺，钛合金、高温合金、碳化硅陶瓷的刀具寿命与切削参数仍在持续迭代，国产刀具在高温合金铣削上的稳定区间已经接近进口替代的临界点。第二类是<strong>超精密表面</strong>，轴承滚道、光学模具、密封端面把粗糙度要求推到 Ra 0.05μm 以内，磨削与研磨的边界越来越依赖在线测量反馈。第三类是<strong>薄膜与表面改性</strong>，PVD、CVD、ALD 在装饰、耐磨、防腐三类场景的配方差异很大，膜厚均匀性往往比硬度更影响良率。第四类是<strong>检测与计量</strong>，三坐标、圆度仪、白光干涉仪的数据如何回流到工艺参数，是很多产线从 92% 良率走向 97% 的关键一步。</p>
+          <p>选型时容易被忽略的是设备与工艺的耦合关系。同一台五轴机床，配不同的夹具刚性、不同的冷却策略，表现可能相差一个精度等级；同一条磨削线，砂轮牌号与修整间隔的匹配度，比单纯堆高主轴转速更有意义。这也是我们把产线实录按「工艺 + 材料 + 精度目标」三重标注的原因。</p>
+          <div class="kv">
+            <div><b>五轴联动</b><span>定位精度 ±3μm 以内为优质区间</span></div>
+            <div><b>超精磨削</b><span>Ra 0.08—0.16μm 为常见交付线</span></div>
+            <div><b>真空镀膜</b><span>膜厚均匀性 ±3% 是分水岭</span></div>
+            <div><b>洁净装配</b><span>ISO 7 级以上适配医疗与光学</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2 精选内容推荐 -->
+      <section class="section" id="picks">
+        <div class="section-head">
+          <div>
+            <span class="kicker">Selected Lines</span>
+            <h2>精选产线实录 · 六条可对照的标杆线</h2>
+            <p class="lead">每条附节拍、良率、在用设备与工艺窗口</p>
+          </div>
+          <a class="more" href="#rank">看完整榜单 →</a>
+        </div>
+        <div class="card-grid" id="pickGrid">
+
+          <article class="card">
+            <div class="card-cover">
+              <img src="https://picsum.photos/seed/jingchan-wuzhou01/400/300" width="400" height="300" loading="lazy" alt="苏州工业园五轴联动加工线现场">
+              <span class="card-badge">五轴联动</span>
+            </div>
+            <div class="card-body">
+              <h3><a href="#deep">苏州工业园五轴联动加工线</a></h3>
+              <div class="tags"><span class="tag">钛合金</span><span class="tag">航空结构件</span><span class="tag warm">热漂移补偿</span></div>
+              <p>12 台立式五轴组成柔性单元，配在线测头做热漂移补偿。实录给出连续 8 小时的定位精度衰减曲线，以及夹具刚性调整前后的表面波纹对比。</p>
+              <div class="card-foot"><span>节拍 42.6s · 良率 96.2%</span><span class="score">9.4</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-cover">
+              <img src="https://picsum.photos/seed/jingchan-moxiao02/400/300" width="400" height="300" loading="lazy" alt="宁波轴承滚道超精磨削线砂轮修整工位">
+              <span class="card-badge">超精磨削</span>
+            </div>
+            <div class="card-body">
+              <h3><a href="#deep">宁波轴承滚道超精磨削线</a></h3>
+              <div class="tags"><span class="tag">GCr15</span><span class="tag">Ra 0.08μm</span><span class="tag">砂轮修整</span></div>
+              <p>以滚道圆度与粗糙度双指标为主线，记录修整间隔从 40 件延长到 65 件的过程，附圆度仪原始波形与油石压力参数表。</p>
+              <div class="card-foot"><span>圆度 0.6μm · 良率 97.1%</span><span class="score">9.2</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-cover">
+              <img src="https://picsum.photos/seed/jingchan-duomo03/400/300" width="400" height="300" loading="lazy" alt="合肥真空镀膜线腔体与靶材布置">
+              <span class="card-badge">真空镀膜</span>
+            </div>
+            <div class="card-body">
+              <h3><a href="#deep">合肥真空镀膜线 PVD 量产实录</a></h3>
+              <div class="tags"><span class="tag">磁控溅射</span><span class="tag">膜厚均匀性</span><span class="tag warm">靶材寿命</span></div>
+              <p>三靶位旋转溅射，重点在膜厚均匀性从 ±4.8% 收窄到 ±2.1% 的调参路径，含基片架转速与挡板开度的对照实验记录。</p>
+              <div class="card-foot"><span>膜厚 ±2.1% · 良率 94.8%</span><span class="score">9.0</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-cover">
+              <img src="https://picsum.photos/seed/jingchan-chongya04/400/300" width="400" height="300" loading="lazy" alt="东莞精密冲压线高速级进模工位">
+              <span class="card-badge">精密冲压</span>
+            </div>
+            <div class="card-body">
+              <h3><a href="#deep">东莞连接器精密冲压线</a></h3>
+              <div class="tags"><span class="tag">级进模</span><span class="tag">0.15mm 料厚</span><span class="tag">毛刺控制</span></div>
+              <p>600 次/分钟高速冲压，毛刺高度控制在 0.02mm 以内。实录给出模具磨损曲线与刃磨周期的对应关系，以及料带张力的影响幅度。</p>
+              <div class="card-foot"><span>600spm · 良率 98.3%</span><span class="score">8.9</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-cover">
+              <img src="https://picsum.photos/seed/jingchan-zengcai05/400/300" width="400" height="300" loading="lazy" alt="西安金属增材制造打印舱内零件成形">
+              <span class="card-badge">增材制造</span>
+            </div>
+            <div class="card-body">
+              <h3><a href="#deep">西安金属增材打印与后处理线</a></h3>
+              <div class="tags"><span class="tag">SLM</span><span class="tag">316L 不锈钢</span><span class="tag">热等静压</span></div>
+              <p>从打印、去支撑、热等静压到精加工的全流程实录，重点比较 HIP 前后孔隙率与疲劳寿命差异，附致密度检测取样位置图。</p>
+              <div class="card-foot"><span>致密度 99.6% · 良率 91.5%</span><span class="score">8.7</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-cover">
+              <img src="https://picsum.photos/seed/jingchan-jiance06/400/300" width="400" height="300" loading="lazy" alt="上海检测计量中心三坐标测量室">
+              <span class="card-badge">检测计量</span>
+            </div>
+            <div class="card-body">
+              <h3><a href="#deep">上海检测计量中心三坐标工位</a></h3>
+              <div class="tags"><span class="tag">三坐标</span><span class="tag">白光干涉</span><span class="tag warm">MSA 分析</span></div>
+              <p>恒温 20±0.5℃ 环境下的量值溯源流程，实录给出同批次零件的重复性与再现性数据，以及测量结果回流到磨削参数的闭环做法。</p>
+              <div class="card-foot"><span>GRR 8.6% · 覆盖 42 类特征</span><span class="score">9.1</span></div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- 3 最新更新 -->
+      <section class="section" id="feed">
+        <div class="section-head">
+          <div>
+            <span class="kicker">Updates</span>
+            <h2>最新更新与产线动态</h2>
+            <p class="lead">11 月 25 日前后 10 条可核对的变更记录</p>
+          </div>
+        </div>
+        <ul class="feed">
+          <li><time>今天 09:30</time><div><b><a href="#picks">苏州工业园五轴联动线</a><span class="pill new">新增</span></b><p>上传连续加工 8 小时的定位精度衰减曲线，第 6 小时起热漂移补偿介入，X 轴累计偏移由 8.4μm 降至 2.9μm。</p></div></li>
+          <li><time>今天 08:12</time><div><b><a href="#picks">宁波轴承滚道超精磨削线</a></b><p>砂轮修整间隔由 40 件调整至 52 件后，圆度仍稳定在 0.6μm，粗糙度未见劣化，单件成本下降 4.7%。</p></div></li>
+          <li><time>昨天 21:10</time><div><b><a href="#picks">合肥真空镀膜线</a><span class="pill new">参数</span></b><p>补充基片架转速 12rpm 与 18rpm 的两组膜厚分布图，均匀性分别为 ±3.4% 与 ±2.1%。</p></div></li>
+          <li><time>昨天 16:45</time><div><b>国产高温合金铣刀批次对比</b><p>三家国产刀具在 GH4169 上的后刀面磨损对比数据上线，第 3 家寿命达 42 分钟，接近进口批次。</p></div></li>
+          <li><time>11 月 23 日</time><div><b><a href="#news">精密零部件供应商名录</a></b><p>新增 9 家洁净装配与光学镀膜企业，补充了 AS9100 与 IATF 16949 认证状态字段。</p></div></li>
+          <li><time>11 月 22 日</time><div><b><a href="#picks">东莞连接器精密冲压线</a><span class="pill live">直播回放</span></b><p>模具刃磨实操直播回放上线，含 0.15mm 料厚下的毛刺抑制三个关键动作。</p></div></li>
+          <li><time>11 月 21 日</time><div><b><a href="#rank">良率榜单</a></b><p>本期周榜更新，洁净装配与精密冲压两类产线整体上移，磨削类因换型频繁略降。</p></div></li>
+          <li><time>11 月 19 日</time><div><b>三坐标 MSA 分析模板</b><p>发布可复用的重复性与再现性记录表结构，附 GRR 计算示例与判定阈值。</p></div></li>
+          <li><time>11 月 17 日</time><div><b><a href="#picks">西安金属增材打印线</a></b><p>补充热等静压前后孔隙率 CT 切片对照，孔隙率由 1.8% 降至 0.4%。</p></div></li>
+          <li><time>11 月 15 日</time><div><b>产线术语表</b><p>新增 Cpk、GRR、Ra、HIP 等 26 条术语的工程口径解释，统一各条实录中的指标定义。</p></div></li>
+        </ul>
+      </section>
+
+      <!-- 4 分类入口 -->
+      <section class="section" id="cats">
+        <div class="section-head">
+          <div>
+            <span class="kicker">Categories</span>
+            <h2>按工艺门类查找产线</h2>
+            <p class="lead">八个常用垂类，点击定位到对应实录集合</p>
+          </div>
+        </div>
+        <div class="cat-grid" id="catGrid">
+          <a class="cat" href="#picks"><b>五轴联动加工</b><span>叶轮、结构件、模具型腔，看定位精度与热补偿</span></a>
+          <a class="cat" href="#picks"><b>超精磨削</b><span>轴承滚道、密封端面，关注圆度与粗糙度曲线</span></a>
+          <a class="cat" href="#picks"><b>真空镀膜</b><span>PVD / CVD 膜厚均匀性与靶材寿命</span></a>
+          <a class="cat" href="#picks"><b>精密冲压</b><span>级进模、料厚 0.1—0.3mm、毛刺控制</span></a>
+          <a class="cat" href="#picks"><b>增材制造</b><span>SLM 打印、去支撑、热等静压后处理</span></a>
+          <a class="cat" href="#picks"><b>检测计量</b><span>三坐标、圆度仪、白光干涉与 MSA 分析</span></a>
+          <a class="cat" href="#deep"><b>热处理</b><span>真空淬火、渗碳、深冷与变形控制</span></a>
+          <a class="cat" href="#deep"><b>洁净装配</b><span>ISO 7 级以上环境、颗粒与静电控制</span></a>
+        </div>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="section" id="deep">
+        <div class="section-head">
+          <div>
+            <span class="kicker">Deep Dive</span>
+            <h2>深度解析：同一零件在四条工艺路线上的取舍</h2>
+            <p class="lead">以电驱壳体与轴承套圈为例，拆开精度、成本与节拍的真实关系</p>
+          </div>
+        </div>
+        <div class="article">
+          <h3>精度目标先定，工艺路线后选</h3>
+          <p>很多选型讨论从设备品牌开始，工程上更有效的顺序是先锁定精度目标与批量。以一个直径 120mm 的铝合金电驱壳体为例，轴承孔的同轴度要求 0.02mm、表面粗糙度 Ra 1.6μm，年需求 8 万件。这个组合决定了必须走「粗加工—半精加工—精加工—在线测量补偿」的多工序路线，而不是靠单台高精度机床一次成形。反过来，如果年需求降到 3000 件、结构改为钛合金薄壁件，五轴一次装夹反而更划算，因为反复装夹引入的定位误差比机床本身的精度损失更大。</p>
+          <p>判断路线时有个实用的经验：把公差带除以 10，得到的数值如果接近所用设备的定位精度，就说明余量不足，需要考虑在线测量或分序释放应力。国久精产收录的实录里，凡是良率稳定在 96% 以上的产线，几乎都在关键工序后布置了测量点，而不是只在终检把关。</p>
+
+          <h3>四条典型路线的能力对照</h3>
+          <div class="table-scroll">
+            <table class="compare">
+              <thead>
+                <tr><th>路线</th><th>典型精度</th><th>单件节拍</th><th>适用批量</th><th>主要风险点</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><b>五轴联动铣削</b></td><td>±3—8μm</td><td>40—90s</td><td>中小批量、多品种</td><td>热漂移、薄壁变形、刀具让刀</td></tr>
+                <tr><td><b>超精磨削</b></td><td>圆度 0.5—1.2μm</td><td>25—60s</td><td>大批量、形状规则</td><td>砂轮修整周期、油石压力不稳</td></tr>
+                <tr><td><b>精密冲压</b></td><td>±0.01mm、毛刺 0.02mm</td><td>0.1—0.5s</td><td>超大批量、薄料</td><td>模具磨损、料带张力波动</td></tr>
+                <tr><td><b>增材 + 精加工</b></td><td>±0.05mm 后精修至 ±0.01mm</td><td>数小时—数天</td><td>单件、复杂内流道</td><td>孔隙率、残余应力、后处理一致性</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>这张对照表最容易被误读的一点是节拍。冲压的 0.1 秒看起来压倒性领先，但它的模具调试周期往往以周计，换型成本高；五轴铣削的 40 秒背后是柔性，换一个型号只需改程序与夹具。选择哪种，取决于未来三年的产品谱系是「少品种大批量」还是「多品种小批量」。</p>
+
+          <h3>良率数据的读法：别只看平均值</h3>
+          <p>一条线报出 96% 良率，含义可能是「长期稳定在 95—97%」，也可能是「前三个月 92%、靠返修拉回 96%」。看数据时至少要拆三层：一次通过率、返修后通过率、以及按缺陷类型分布。国久精产在每条实录里保留缺陷分类字段，就是因为尺寸超差与表面缺陷的改进路径完全不同——前者要做能力指数分析，后者往往指向切削液、清洗或环境颗粒。</p>
+          <ul>
+            <li><b>一次通过率</b>：真实工艺能力，决定成本底线。</li>
+            <li><b>Cpk 值</b>：低于 1.33 说明过程能力不足，先改工艺再谈提产。</li>
+            <li><b>缺陷 TOP3</b>：连续三个月不变化的缺陷类型，通常指向设备或来料而非操作。</li>
+            <li><b>换型损失</b>：多品种产线的隐形成本，常被良率平均值掩盖。</li>
+          </ul>
+          <div class="callout"><b>一条经验判断：</b>如果某条线宣称良率 98% 以上但拒绝提供 Cpk 与缺陷分布，这个数字基本只能当宣传口径看。可核对的数据一定包含样本量与统计周期。</div>
+
+          <h3>薄膜与表面改性：均匀性优先于硬度</h3>
+          <p>镀膜类产线的常见误区是拿硬度值做唯一指标。实际量产中，膜厚均匀性对良率的贡献往往更大：均匀性差 1%，边缘区域的结合力与耐磨表现就会明显分层，装配后表现为局部早期失效。合肥那条 PVD 线的调参过程很典型——先固定靶功率，用基片架转速与挡板开度两个变量做正交试验，把均匀性从 ±4.8% 压到 ±2.1%，硬度反而只提升了 3%。靶材寿命同样重要，它直接决定耗材成本与换靶停机时间。</p>
+
+          <h3>检测环节的价值被长期低估</h3>
+          <p>把测量当成「最后一道筛子」是浪费。上海计量中心的实录显示，同一批零件在引入 GRR 8.6% 的测量系统后，磨削工位根据测量反馈每 20 件微调一次进给，圆度分散带收窄了约 35%。测量系统的重复性必须显著优于公差带，一般要求 GRR 低于 10%，否则你调的是噪声而不是工艺。这也是我们在选型路径里把「有没有闭环测量」放在设备参数之前的原因。</p>
+        </div>
+      </section>
+
+      <!-- 6 体验指南 -->
+      <section class="section" id="guide">
+        <div class="section-head">
+          <div>
+            <span class="kicker">Reading Path</span>
+            <h2>看产线实录的顺序与判断依据</h2>
+            <p class="lead">第一次接触精密制造内容，按这五步走效率最高</p>
+          </div>
+        </div>
+        <div class="section-pad">
+          <ol class="steps">
+            <li><b>先确认自己的精度目标与批量</b><span>把公差带、年需求量、材料三件事写下来。这三项决定了你该看铣削、磨削还是冲压类实录，否则容易在无关产线上耗时间。</span></li>
+            <li><b>再看设备的精度等级与热管理方案</b><span>定位精度、重复定位精度、是否有热漂移补偿，比主轴转速更能预测实际表现。没有温控说明的产线，数据可信度要打折。</span></li>
+            <li><b>重点读良率与缺陷分布，而不是峰值数据</b><span>关注一次通过率、Cpk 与缺陷 TOP3。峰值精度只代表最好状态，量产看的是分布带宽度。</span></li>
+            <li><b>比较同类产线的换型成本</b><span>多品种场景下，换型时间与首件合格率往往比节拍更影响总成本。实录里的换型记录值得逐条看。</span></li>
+            <li><b>最后看检测与数据回流机制</b><span>有在线测量、有参数回流的产线，改进速度明显更快。这一条是判断供应商工程能力的分水岭。</span></li>
+          </ol>
+          <div class="callout">判断一条实录值不值得细读，有个快捷方法：看它有没有给出<b>具体的测量条件</b>（温度、量具型号、样本量）。给出条件的多半是真实现场，只给结论的通常是转述。</div>
+        </div>
+      </section>
+
+      <!-- 7 FAQ -->
+      <section class="section" id="faq">
+        <div class="section-head">
+          <div>
+            <span class="kicker">FAQ</span>
+            <h2>工程师常问的六个问题</h2>
+            <p class="lead">围绕工艺选择、数据判读与首次接触顺序</p>
+          </div>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>五轴联动加工和超精磨削，同一个零件该怎么选？</summary>
+            <div class="ans">看形状与精度分布。回转体、形状规则、批量大的零件优先磨削，圆度与粗糙度更容易稳定；形状复杂、有斜面与内腔、批量中等的零件用五轴更灵活。若同时要求高形状精度和复杂几何，常见做法是五轴铣出型面再磨削关键配合面，两段工艺各取所长。</div>
+          </details>
+          <details>
+            <summary>产线实录里的良率数据一般多久更新一次？</summary>
+            <div class="ans">按产线节奏不同。稳定量产线多为月度更新，换型频繁的线按批次更新，新上线产线在前三个月通常每周补充。本页 11 月 25 日的更新集中在五轴与磨削两类，镀膜线因调参刚结束，参数记录补充得更密。</div>
+          </details>
+          <details>
+            <summary>第一次接触精密制造内容，从哪条实录开始看比较好？</summary>
+            <div class="ans">建议从东莞连接器精密冲压线入手。它的指标最直观——料厚、毛刺高度、冲次，因果关系清晰，不需要太多背景知识。看完再读宁波轴承磨削线，理解圆度与粗糙度如何互相牵制，最后看五轴线的热漂移部分。</div>
+          </details>
+          <details>
+            <summary>膜厚均匀性 ±2% 和 ±5% 在实际使用中差别有多大？</summary>
+            <div class="ans">差别主要体现在边缘区域的一致性。±5% 时，零件边缘与中心的耐磨或光学性能会出现可测量的分层，装配后表现为局部早期失效或色差。对装饰镀层，±5% 常导致同批次色差投诉；对功能镀层，它影响的是寿命分布而不是平均值。</div>
+          </details>
+          <details>
+            <summary>增材制造件的致密度 99.6% 算合格吗？</summary>
+            <div class="ans">要看用途。一般结构件 99.5% 以上可接受，承力件通常要求 99.8% 以上并配合热等静压。注意致密度是平均值，关键在孔隙的尺寸与位置分布——同样 99.6%，分散微孔与集中在大应力区的缺陷，疲劳表现可能相差数倍。</div>
+          </details>
+          <details>
+            <summary>怎么判断一条产线的数据是不是真实量产数据？</summary>
+            <div class="ans">看三个细节：有没有样本量与统计周期，有没有缺陷分类而不是只报总良率，有没有换型或异常批次的记录。真实量产数据一定包含波动与返修，全是漂亮数字且没有统计口径的，多半是演示数据。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8 用户评论 -->
+      <section class="section" id="comments">
+        <div class="section-head">
+          <div>
+            <span class="kicker">Community</span>
+            <h2>同行讨论：16 条来自现场的反馈</h2>
+            <p class="lead">含中性评价与质疑，按时间倒序</p>
+          </div>
+        </div>
+        <div class="comments">
+          <div class="cmt"><div class="cmt-head"><span class="avatar">陈</span><span class="cmt-name">陈工_机加十年</span><span class="cmt-time">11-25 10:22</span></div><p>苏州那条线的热漂移曲线很有参考价值。我们同类机床第 5 小时开始明显爬坡，一直以为是环境温度，看了补偿介入时机才意识到是主轴连续负载的问题。</p></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar a2">老</span><span class="cmt-name">老周磨床</span><span class="cmt-time">11-25 09:41</span></div><p>修整间隔从 40 件到 52 件，圆度还能守住 0.6μm，说明砂轮选型是对的。<span class="on">不过我更想知道油石压力的稳定性怎么保证</span>，这块实录写得略简。</p></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar a3">林</span><span class="cmt-name">林工_镀膜</span><span class="cmt-time">11-24 22:05</span></div><p>±4.8% 到 ±2.1% 那段正交试验思路清楚。我们做过类似的，挡板开度的影响确实比转速大，但换靶后又要重新标定，这块维护成本实录里可以再展开。</p></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar a4">采</span><span class="cmt-name">采购小郭</span><span class="cmt-time">11-24 18:33</span></div><p>供应商名录加了认证状态字段很实用，之前要一家家问 AS9100。希望后面能标出可接受的起订量区间。</p></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar a5">冲</span><span class="cmt-name">冲压阿凯</span><span class="cmt-time">11-24 15:10</span></div><p>0.15mm 料厚做到毛刺 0.02mm 以内，600 冲次，这个水平不错。但模具刃磨周期没写具体冲次，光说磨损曲线没法横向比。</p></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar a6">质</span><span class="cmt-name">质量部小夏</span><span class="cmt-time">11-24 11:47</span></div><p>GRR 8.6% 这个数挺好。很多产线报良率不报测量系统能力，结果调机调的是噪声。建议每条实录都加一行测量系统判定。</p></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar">赵</span><span class="cmt-name">赵工_增材</span><span class="cmt-time">11-23 21:19</span></div><p>HIP 前后孔隙率 1.8% 到 0.4%，和我们 316L 的实测接近。不过疲劳寿命的提升幅度取决于孔隙位置，CT 切片位置图挺关键，这条做得细。</p></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar a2">设</span><span class="cmt-name">设备老李</span><span class="cmt-time">11-23 16:02</span></div><p>中立说一句，五轴线 12 台组柔性单元，节拍 42.6 秒听着不错，但换型时间没披露。多品种场景下这才是真成本。</p></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar a3">刀</span><span class="cmt-name">刀具老徐</span><span class="cmt-time">11-23 10:35</span></div><p>GH4169 国产铣刀 42 分钟寿命，确实接近进口了。但要注意后刀面磨损判据是否一致，用 VB 0.3 还是 0.2，结论差很多。</p></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar a4">实</span><span class="cmt-name">实习生小鹿</span><span class="cmt-time">11-22 20:48</span></div><p>按指南从冲压那条开始看的，确实好懂。现在能大致理解毛刺高度和模具间隙的关系了，比直接啃手册快。</p></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar a5">热</span><span class="cmt-name">热处理老韩</span><span class="cmt-time">11-22 14:26</span></div><p>热处理这块内容还是偏少。真空淬火的变形控制才是很多精密件的瓶颈，希望多几条实录。</p></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar a6">光</span><span class="cmt-name">光学小程</span><span class="cmt-time">11-21 19:07</span></div><p>白光干涉那部分写得到位。Ra 0.05μm 以下的测量，探针和光学方法结果会有差异，实录里区分了量具型号，这点很专业。</p></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar">钱</span><span class="cmt-name">钱工_工艺</span><span class="cmt-time">11-21 11:52</span></div><p>四条路线对照表做得实用。补充一点：冲压的换型成本要算模具调试，不只是换模时间，首件调试常常要半天。</p></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar a2">宁</span><span class="cmt-name">宁波小厂主</span><span class="cmt-time">11-20 17:14</span></div><p>我们规模小，看这些大线数据主要是找对标区间。良率 96% 对我们来说已经很高了，实际 91% 左右，差距主要在检测闭环。</p></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar a3">供</span><span class="cmt-name">供应链阿敏</span><span class="cmt-time">11-19 15:39</span></div><p>名录里的洁净装配企业数量还是少了点，ISO 7 级以上的光学装配供应商不好找，希望扩充。</p></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar a4">数</span><span class="cmt-name">数据分析小何</span><span class="cmt-time">11-18 09:28</span></div><p>Cpk 低于 1.33 先改工艺这条同意。但也要看公差是不是定得过紧，有些设计公差本身就没给工艺留余量。</p></div>
+        </div>
+      </section>
+
+      <!-- 9 相关资讯 -->
+      <section class="section" id="news">
+        <div class="section-head">
+          <div>
+            <span class="kicker">Industry News</span>
+            <h2>相关资讯与供应链动态</h2>
+            <p class="lead">11 月 25 日前 30 天内的六条可核对消息</p>
+          </div>
+        </div>
+        <ul class="news">
+          <li>
+            <img src="https://picsum.photos/seed/jingchan-news01/600/400" width="600" height="400" loading="lazy" alt="国产五轴加工中心出厂验收现场">
+            <div>
+              <h3><a href="#picks">国产五轴加工中心在航空结构件批量应用中定位精度达标</a></h3>
+              <p>多家产线反馈，配热漂移补偿后连续 8 小时 X 轴偏移可控制在 3μm 内，已进入结构件批量供应序列。</p>
+              <time>2026-11-24</time>
+            </div>
+          </li>
+          <li>
+            <img src="https://picsum.photos/seed/jingchan-news02/600/400" width="600" height="400" loading="lazy" alt="轴承滚道超精磨削加工特写">
+            <div>
+              <h3><a href="#picks">轴承行业超精磨削工艺标准修订，圆度判定细化</a></h3>
+              <p>新版判定方法把圆度与波纹度分开评价，样本量与测量条件写入附录，对产线数据记录提出更高要求。</p>
+              <time>2026-11-21</time>
+            </div>
+          </li>
+          <li>
+            <img src="https://picsum.photos/seed/jingchan-news03/600/400" width="600" height="400" loading="lazy" alt="真空镀膜腔体内靶材与基片架">
+            <div>
+              <h3><a href="#picks">PVD 靶材国产化推进，膜厚均匀性成为采购硬指标</a></h3>
+              <p>采购方开始把 ±3% 均匀性写入技术协议，靶材寿命与换靶停机时间同步纳入评估。</p>
+              <time>2026-11-18</time>
+            </div>
+          </li>
+          <li>
+            <img src="https://picsum.photos/seed/jingchan-news04/600/400" width="600" height="400" loading="lazy" alt="高速级进模冲压料带运行">
+            <div>
+              <h3><a href="#picks">连接器冲压向 0.1mm 料厚推进，模具寿命压力上升</a></h3>
+              <p>薄料高速冲压对模具间隙与料带张力控制更敏感，刃磨周期普遍缩短 15%—20%。</p>
+              <time>2026-11-15</time>
+            </div>
+          </li>
+          <li>
+            <img src="https://picsum.photos/seed/jingchan-news05/600/400" width="600" height="400" loading="lazy" alt="金属增材制造打印舱内成形过程">
+            <div>
+              <h3><a href="#picks">金属增材热等静压外协资源趋紧，交付周期拉长</a></h3>
+              <p>承力件订单集中，HIP 环节排期延长至 3—4 周，部分产线改为自建后处理能力。</p>
+              <time>2026-11-11</time>
+            </div>
+          </li>
+          <li>
+            <img src="https://picsum.photos/seed/jingchan-news06/600/400" width="600" height="400" loading="lazy" alt="计量中心三坐标测量机工作台">
+            <div>
+              <h3><a href="#picks">计量机构推行测量系统能力前置审查，GRR 10% 成门槛</a></h3>
+              <p>新送检零件需先提交测量系统分析记录，重复性与再现性不达标的不予出具能力评价。</p>
+              <time>2026-11-06</time>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 10 相关推荐 -->
+      <section class="section" id="related">
+        <div class="section-head">
+          <div>
+            <span class="kicker">Related</span>
+            <h2>延伸方向与相关条目</h2>
+            <p class="lead">从具体工艺词进入，找到同类实录</p>
+          </div>
+        </div>
+        <div class="index-tags">
+          <a href="#deep">钛合金薄壁件变形控制 <i>18</i></a>
+          <a href="#deep">砂轮修整间隔优化 <i>12</i></a>
+          <a href="#deep">磁控溅射膜厚均匀性 <i>9</i></a>
+          <a href="#deep">级进模刃磨周期 <i>14</i></a>
+          <a href="#deep">热等静压孔隙率 <i>7</i></a>
+          <a href="#deep">三坐标 MSA 分析 <i>16</i></a>
+          <a href="#guide">真空淬火变形控制 <i>11</i></a>
+          <a href="#guide">洁净装配颗粒管控 <i>8</i></a>
+        </div>
+      </section>
+
+      <!-- 11 补充板块：榜单 + 时间线 -->
+      <section class="section" id="rank">
+        <div class="section-head">
+          <div>
+            <span class="kicker">Ranking</span>
+            <h2>本周良率与稳定性榜单</h2>
+            <p class="lead">按一次通过率与过程能力综合排序，2026-11-25 更新</p>
+          </div>
+        </div>
+        <div class="section-pad" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px">
+          <div>
+            <h3 style="font-size:14.5px;margin-bottom:10px;color:var(--brand)">一次通过率 TOP 6</h3>
+            <ol class="rank-list" style="margin:0;padding:0">
+              <li><div><a href="#picks">东莞连接器精密冲压线</a><span class="meta">98.3% · 600spm</span></div></li>
+              <li><div><a href="#picks">宁波轴承滚道超精磨削线</a><span class="meta">97.1% · 圆度 0.6μm</span></div></li>
+              <li><div><a href="#picks">苏州工业园五轴联动加工线</a><span class="meta">96.2% · 节拍 42.6s</span></div></li>
+              <li><div><a href="#feed">常州精密齿轮滚齿线</a><span class="meta">95.6% · 6 级精度</span></div></li>
+              <li><div><a href="#picks">合肥真空镀膜线</a><span class="meta">94.8% · ±2.1% 均匀性</span></div></li>
+              <li><div><a href="#picks">西安金属增材打印线</a><span class="meta">91.5% · 致密度 99.6%</span></div></li>
+            </ol>
+          </div>
+          <div>
+            <h3 style="font-size:14.5px;margin-bottom:10px;color:var(--brand)">近期记录时间线</h3>
+            <ul class="timeline">
+              <li><span class="t-date">2026-11-25</span><b>五轴热漂移补偿数据上线</b><span class="desc">8 小时连续加工曲线，X 轴偏移由 8.4μm 降至 2.9μm。</span></li>
+              <li><span class="t-date">2026-11-24</span><b>磨削线修整间隔延长验证</b><span class="desc">40 件调至 52 件，圆度保持 0.6μm。</span></li>
+              <li><span class="t-date">2026-11-23</span><b>镀膜均匀性正交试验记录</b><span class="desc">转速与挡板开度双因素，均匀性收窄至 ±2.1%。</span></li>
+              <li><span class="t-date">2026-11-19</span><b>三坐标 MSA 模板发布</b><span class="desc">含 GRR 计算示例与 10% 判定阈值。</span></li>
+              <li><span class="t-date">2026-11-15</span><b>产线术语表扩充至 26 条</b><span class="desc">统一 Cpk、GRR、Ra、HIP 等指标口径。</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <p class="no-result" id="noResult">未找到与「<b id="noResultWord"></b>」相关的产线或工艺条目。可尝试搜索「五轴」「磨削」「镀膜」「冲压」「三坐标」等具体词。</p>
+
+    </main>
+
+    <!-- 右辅助栏 -->
+    <aside class="col-right" aria-label="辅助信息">
+      <div class="sticky-col">
+        <div class="side-card">
+          <div class="side-head"><span>本周热榜</span><span style="font-size:11px;color:#8b9aa3;font-family:var(--mono)">11-25</span></div>
+          <div class="side-body" style="padding:6px 14px 12px">
+            <ol class="rank-list">
+              <li><div><a href="#picks">苏州工业园五轴联动加工线</a><span class="meta">节拍 42.6s · 良率 96.2%</span></div></li>
+              <li><div><a href="#picks">宁波轴承滚道超精磨削线</a><span class="meta">Ra 0.08μm · 圆度 0.6μm</span></div></li>
+              <li><div><a href="#picks">东莞连接器精密冲压线</a><span class="meta">600spm · 毛刺 0.02mm</span></div></li>
+              <li><div><a href="#picks">合肥真空镀膜线</a><span class="meta">膜厚 ±2.1%</span></div></li>
+              <li><div><a href="#picks">上海检测计量中心三坐标工位</a><span class="meta">GRR 8.6%</span></div></li>
+              <li><div><a href="#picks">西安金属增材打印线</a><span class="meta">致密度 99.6%</span></div></li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="side-card">
+          <div class="side-head"><span>关键指标速查</span></div>
+          <div class="side-body" style="font-size:12.6px;color:#4b5c69;line-height:1.8">
+            <p style="margin:0 0 6px"><b style="color:#0b5d63">Cpk</b> ≥1.33 视为过程能力充足</p>
+            <p style="margin:0 0 6px"><b style="color:#0b5d63">GRR</b> ＜10% 测量系统可接受</p>
+            <p style="margin:0 0 6px"><b style="color:#0b5d63">Ra</b> 0.08—0.16μm 精磨常见交付值</p>
+            <p style="margin:0 0 6px"><b style="color:#0b5d63">致密度</b> 承力件 ≥99.8% 配 HIP</p>
+            <p style="margin:0"><b style="color:#0b5d63">均匀性</b> 镀膜 ±3% 为分水岭</p>
+          </div>
+        </div>
+
+        <div class="side-card">
+          <div class="side-head"><span>供应商名录</span></div>
+          <div class="side-body" style="padding:8px 10px">
+            <ul class="chan-list">
+              <li><a href="#news">洁净装配（ISO 7） <span class="cnt">17</span></a></li>
+              <li><a href="#news">精密冲压模具 <span class="cnt">23</span></a></li>
+              <li><a href="#news">真空镀膜加工 <span class="cnt">14</span></a></li>
+              <li><a href="#news">三坐标检测服务 <span class="cnt">21</span></a></li>
+              <li><a href="#news">热等静压外协 <span class="cnt">6</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<!-- 页尾 -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="brand-name">国久精产</span>
+        <span class="brand-sub">JINGCHAN INDUSTRY</span>
+        <p>记录国内精密制造与高端装备的真实产线：工艺参数、良率数据、设备构成与供应商信息，服务工程师选型、采购比价与工艺改进。</p>
+      </div>
+      <div>
+        <h4>工艺频道</h4>
+        <ul>
+          <li><a href="#cats">五轴联动加工</a></li>
+          <li><a href="#cats">超精磨削</a></li>
+          <li><a href="#cats">真空镀膜</a></li>
+          <li><a href="#cats">精密冲压</a></li>
+          <li><a href="#cats">增材制造</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>数据栏目</h4>
+        <ul>
+          <li><a href="#feed">最新更新</a></li>
+          <li><a href="#rank">良率榜单</a></li>
+          <li><a href="#news">供应链资讯</a></li>
+          <li><a href="#related">延伸方向</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>阅读与参考</h4>
+        <ul>
+          <li><a href="#deep">深度解析</a></li>
+          <li><a href="#guide">选型路径</a></li>
+          <li><a href="#faq">工程师问答</a></li>
+          <li><a href="#overview">领域概览</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区</h4>
+        <ul>
+          <li><a href="#comments">同行讨论</a></li>
+          <li><a href="#picks">产线名录</a></li>
+          <li><a href="#top">回到顶部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="note">数据说明：本页产线节拍、良率、精度与日期均为示例条目，用于展示内容结构；实际选型请以供应商提供的实测报告与认证文件为准。工艺指标定义见术语表。</span>
+      <span>© 2026 国久精产 · 内容示例站点</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var q = document.getElementById('q');
+  var noResult = document.getElementById('noResult');
+  var noResultWord = document.getElementById('noResultWord');
+  var pickGrid = document.getElementById('pickGrid');
+  var catGrid = document.getElementById('catGrid');
+
+  function norm(s){ return (s||'').toLowerCase().replace(/\s+/g,''); }
+
+  function runSearch(){
+    var kw = norm(q.value);
+    var cards = pickGrid ? pickGrid.querySelectorAll('.card') : [];
+    var cats = catGrid ? catGrid.querySelectorAll('.cat') : [];
+    var visible = 0;
+
+    cards.forEach(function(c){
+      var hit = !kw || norm(c.textContent).indexOf(kw) !== -1;
+      c.classList.toggle('hide', !hit);
+      if(hit) visible++;
+    });
+    cats.forEach(function(c){
+      var hit = !kw || norm(c.textContent).indexOf(kw) !== -1;
+      c.classList.toggle('hide', !hit);
+      if(hit) visible++;
+    });
+
+    if(kw && visible === 0){
+      noResultWord.textContent = q.value.trim();
+      noResult.style.display = 'block';
+    } else {
+      noResult.style.display = 'none';
+    }
+  }
+
+  if(q){
+    q.addEventListener('input', runSearch);
+    q.addEventListener('search', runSearch);
+  }
+
+  var menuBtn = document.getElementById('menuBtn');
+  var mobileNav = document.getElementById('mobileNav');
+  if(menuBtn && mobileNav){
+    menuBtn.addEventListener('click', function(){
+      var open = mobileNav.style.display !== 'none';
+      mobileNav.style.display = open ? 'none' : 'flex';
+      menuBtn.setAttribute('aria-expanded', String(!open));
+    });
+    mobileNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        mobileNav.style.display = 'none';
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+})();
+</script>
+</body>
+  </html>
